@@ -1,0 +1,55 @@
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login {
+    margin-left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, 0);
+}
+
+.login button {
+    background-color: #33AAFF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login p {
+    color: red;
+    margin: 0;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.login img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
+
+.login button:hover {
+    opacity: 0.8;
+}
