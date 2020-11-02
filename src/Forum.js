@@ -29,7 +29,7 @@ export default function Forum(props) {
     return (
         <div className="forum">
             <div className="forumAvatar">
-                <img src={user.avatar}/>
+                <img alt={user.name} src={user.avatar}/>
                 <h1>{user.name}</h1>
             </div>
             <div className="forumContent">

@@ -44,7 +44,7 @@ export default function ForumsList(props) {
     var {catagory} = props;
 
     var [forums, setForums] = useState([]);
-    callBackendAPI(catagory).then(res => setForums(res));
+    if (forums.length === 0) callBackendAPI(catagory).then(res => setForums(res));
 
     var copyForums = [...forums];
     copyForums.reverse();

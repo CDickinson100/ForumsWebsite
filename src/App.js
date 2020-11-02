@@ -7,6 +7,7 @@ import CreateThread from "./CreateThread";
 import './style.css';
 
 async function getAvatar(name) {
+    console.log("getting Avatar")
     const responce = await fetch('/getAvatar?user=' + name);
     const body = await responce.text();
 
@@ -86,7 +87,6 @@ function App() {
             document.getElementById("myDropdown").style.visibility = "hidden";
         }
         if (!event.target.matches('.changeAvatar') && !event.target.matches('.avatarbtn') && !event.target.matches('.useravatar')) {
-            console.log(event.target);
             document.getElementById("changeAvatar").style.visibility = "hidden";
         }
     }
