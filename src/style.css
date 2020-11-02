@@ -55,7 +55,6 @@ main {
 }
 
 .loggedIn {
-    visibility: hidden;
     display: flex;
     float: right;
     padding-right: 25%;
@@ -75,7 +74,6 @@ main {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    visibility: hidden;
     margin-top: 70px;
 }
 
