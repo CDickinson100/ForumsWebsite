@@ -66,7 +66,7 @@ export default function CreateThread() {
                     <input type="text" placeholder="Enter Title" id="title" name="title" required/>
                     <label htmlFor="text"><b>Text</b></label>
                     <input type="text" placeholder="Enter Body" id="text" name="text" required/>
-                    <p id="incorrect"></p>
+                    <p id="incorrect"/>
                     <button type="submit" onClick={createThread}>Post Thread</button>
                 </div>
             </div>

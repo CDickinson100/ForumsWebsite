@@ -36,7 +36,7 @@ export default function Register() {
                            required/>
                     <label htmlFor="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" id="psw" name="psw" required/>
-                    <p id="incorrect"></p>
+                    <p id="incorrect"/>
                     <button type="submit" onClick={create}>Create Account</button>
                 </div>
             </div>
