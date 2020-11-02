@@ -91,7 +91,6 @@ main {
 }
 
 .changeAvatar {
-    visibility: hidden;
     position: fixed;
     top: 20%;
     left: 30%;

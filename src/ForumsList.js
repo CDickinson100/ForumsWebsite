@@ -29,31 +29,23 @@ async function callBackendAPI(catagory) {
     return body;
 }
 
-async function auth() {
-    if (await isAuth(name) === "false") {
-        if (document.getElementById("newThread")) {
-            document.getElementById("newThread").style.visibility = "hidden";
-        }
-    }
-
-}
-
-auth();
-
 export default function ForumsList(props) {
     var {catagory} = props;
 
     var [forums, setForums] = useState([]);
+    var [auth, setAuth] = useState("");
+
     if (forums.length === 0) callBackendAPI(catagory).then(res => setForums(res));
+    if (!auth) isAuth(name).then(res => setAuth(res));
 
     var copyForums = [...forums];
     copyForums.reverse();
 
     return (
         <div className="forumsList">
-            <button onClick={createThread} id="newThread"
-                    className="newThread">Post New Thread
-            </button>
+            {auth === "true" && <button onClick={createThread} id="newThread"
+                                        className="newThread">Post New Thread
+            </button>}
             <br/>
             <br/>
             {copyForums.map(forum => {

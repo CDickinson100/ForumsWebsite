@@ -91,10 +91,6 @@ function App() {
         }
     }
 
-    function avatar() {
-        document.getElementById("changeAvatar").style.visibility = "visible";
-    }
-
     function closeAvatar() {
         document.getElementById("changeAvatar").style.visibility = "visible";
     }
@@ -119,7 +115,7 @@ function App() {
                              alt="Avatar"/>
 
                         <div id="myDropdown" className="dropdown-content">
-                            <button className="avatarbtn" onClick={avatar}>Change Avatar</button>
+                            <button className="avatarbtn" onClick={closeAvatar}>Change Avatar</button>
                             <button onClick={logout}>Logout</button>
                         </div>
                     </div>
