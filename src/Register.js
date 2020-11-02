@@ -21,7 +21,6 @@ function create() {
             localStorage.setItem("password", document.getElementById('psw').value);
             window.location = "/";
         } else {
-            document.getElementById("incorrect").style.visibility = "visible";
             document.getElementById("incorrect").innerHTML = res;
         }
     });

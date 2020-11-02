@@ -31,7 +31,7 @@ function login() {
             localStorage.setItem("password", document.getElementById('psw').value);
             window.location = "/";
         } else {
-            document.getElementById("incorrect").style.visibility = "visible";
+            document.getElementById("incorrect").innerText="Incorrect username or password";
         }
     });
 }
@@ -60,7 +60,7 @@ export default function Login() {
                            required/>
                     <label htmlFor="psw"><b>Password</b></label>
                     <input type="password" placeholder="Enter Password" id="psw" name="psw" required/>
-                    <p id="incorrect"><b>Incorrect username or password</b></p>
+                    <p id="incorrect"></p>
                     <button type="submit" onClick={login}>Login</button>
                 </div>
             </div>
